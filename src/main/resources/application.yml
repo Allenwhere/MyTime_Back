@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: test
+
+
+
+---
+spring:
+  profiles: test
+  jpa:
+    show-sql: true
+    properties:
+      hibernates:
+        hibernate.format_sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/my_time_test
+    username: root
+    password: 123123
+
+
